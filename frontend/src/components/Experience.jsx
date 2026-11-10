@@ -5,94 +5,96 @@ import {
   HiOutlineCheckCircle,
   HiOutlineSparkles,
 } from "react-icons/hi";
-import { FaLaptopCode, FaHandsHelping, FaAward } from "react-icons/fa";
+import { FaLaptopCode, FaHandsHelping, FaAward, FaNetworkWired } from "react-icons/fa";
 
 const experiences = [
   {
-    role: "Frontend Developer Trainee / Intern",
-    company: "Software Development Firm / Tech Lab",
+    role: "Consultant – ICT Support",
+    company: "UNESCO Dhaka",
     location: "Dhaka, Bangladesh",
-    period: "Jan 2024 – Jun 2024",
-    type: "Internship / Practical Training",
-    badgeColor: "bg-blue-50 text-blue-700 border-blue-200",
+    period: "15 May 2025 – 30 Sep 2025",
+    type: "Consultancy • ICT Operations",
+    badgeColor: "bg-blue-50 text-blue-800 border-blue-200",
     responsibilities: [
-      "Engineered reusable and accessible React components according to Figma design specifications.",
-      "Integrated RESTful APIs, handled asynchronous state loading states, and reduced unnecessary re-renders.",
-      "Adopted professional Git workflow (feature branching, clean commit messages, code review PRs).",
-      "Collaborated in Agile sprints with team members to resolve UI bugs and enhance responsiveness.",
+      "Managed day-to-day ICT support operations across all teams at UNESCO Dhaka, diagnosing and resolving complex hardware, software, printing, and local network issues.",
+      "Configured operating systems, workstation installations, preventive hardware maintenance, and overall organizational ICT infrastructure.",
+      "Supervised digital collaboration tools, staff email systems, audio-visual conference equipment, and coordinated live technical operations for high-level meetings and national/international workshops.",
+      "Provided prompt technical guidance with clear, patient communication to ensure uninterrupted office workflows.",
     ],
-    technologies: ["React.js", "Tailwind CSS", "JavaScript ES6+", "Git", "REST APIs"],
+    technologies: [
+      "ICT Operations",
+      "Network Troubleshooting",
+      "Hardware & Software Support",
+      "Audio-Visual Systems",
+      "Workstation Configuration",
+      "System Administration",
+    ],
   },
   {
-    role: "Independent & Freelance Web Developer",
-    company: "Self-Employed / Client Work",
-    location: "Remote",
-    period: "2023 – Present",
-    type: "Freelance & Projects",
-    badgeColor: "bg-emerald-50 text-emerald-700 border-emerald-200",
-    responsibilities: [
-      "Designed and deployed responsive web interfaces for multiple clients and personal portfolio initiatives.",
-      "Delivered pixel-perfect mobile-first designs with Tailwind CSS achieving top Lighthouse performance scores.",
-      "Configured automated deployments and DNS hosting setups on Vercel and Netlify.",
-      "Communicated directly with project stakeholders to gather requirements and iterate based on feedback.",
-    ],
-    technologies: ["React", "HTML5/CSS3", "JavaScript", "Tailwind CSS", "Vercel"],
-  },
-  {
-    role: "Academic Project Lead & Developer",
-    company: "University Software Lab",
+    role: "Volunteer – ICT Support",
+    company: "UNESCO Dhaka",
     location: "Dhaka, Bangladesh",
-    period: "2023 – 2024",
-    type: "Academic & Team Project",
-    badgeColor: "bg-purple-50 text-purple-700 border-purple-200",
+    period: "3 Nov 2024 – 3 May 2025",
+    type: "Volunteer • Practical Training",
+    badgeColor: "bg-emerald-50 text-emerald-800 border-emerald-200",
     responsibilities: [
-      "Spearheaded the frontend architecture for a multi-page web portal as part of the academic capstone.",
-      "Coordinated task delegation among 3 team members and conducted internal code walkthroughs.",
-      "Implemented clean form validations, authentication flow, and local state persistence.",
+      "Delivered technical assistance to staff members, diagnosing computer hardware, operating system setups, software updates, and local network connectivity problems.",
+      "Assisted the IT department with assembling, setting up, and deploying workstations, laptops, and peripheral hardware.",
+      "Arranged conference room multimedia tools, projectors, audio systems, and digital presentations for organizational training sessions and workshops.",
+      "Maintained IT support logs and collaborated closely with senior consultants to optimize workstation speed and stability.",
     ],
-    technologies: ["JavaScript", "Bootstrap 5", "Node.js Basics", "Database Systems"],
+    technologies: [
+      "Technical Troubleshooting",
+      "Workstation Setup",
+      "Hardware Diagnostics",
+      "Audio-Visual Setup",
+      "ICT Support",
+    ],
   },
 ];
 
 const valueProps = [
   {
     icon: FaLaptopCode,
-    title: "Rapid Onboarding",
-    desc: "Solid foundational knowledge in React 19, modern JavaScript, and Git ensures minimal ramp-up time.",
+    title: "Full Stack Web Mastery",
+    desc: "Hands-on expertise across React 19, Next.js App Router, Tailwind CSS, Node.js, Express, and MongoDB, actively shipping production features.",
   },
   {
-    icon: HiOutlineSparkles,
-    title: "High Energy & Drive",
-    desc: "Passionate about writing clean code, actively taking feedback, and solving complex problems with enthusiasm.",
+    icon: FaNetworkWired,
+    title: "Proven UNESCO ICT Experience",
+    desc: "Demonstrated reliability as both Volunteer and Consultant at UNESCO Dhaka, troubleshooting IT infrastructure under international standards.",
   },
   {
     icon: FaHandsHelping,
-    title: "Team Player",
-    desc: "Thrives in collaborative environments with respectful communication and strong empathy for peers.",
+    title: "Empathetic & Clear Communicator",
+    desc: "Easygoing, patient, and respectful collaborator who communicates effectively with developers, non-technical team members, and stakeholders.",
   },
   {
     icon: FaAward,
-    title: "Modern Best Practices",
-    desc: "Trained on the latest tools (Vite, Tailwind v4, Component-driven design) with zero outdated baggage.",
+    title: "Rapid Adaptability & Drive",
+    desc: "Eager to absorb constructive code reviews, follow industry best practices, and contribute immediate engineering value from day one.",
   },
 ];
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-24 px-6 md:px-12 max-w-7xl mx-auto bg-gray-50/50">
+    <section id="experience" className="py-24 px-6 md:px-12 max-w-7xl mx-auto bg-gray-50/60">
       {/* Section Header */}
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-3">
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 border border-blue-200/60 text-blue-700 text-xs font-semibold uppercase tracking-wider">
-          <HiOutlineBriefcase className="text-blue-600 text-sm" />
-          <span>Practical Background</span>
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 border border-teal-200/80 text-teal-800 text-xs font-semibold uppercase tracking-wider font-mono">
+          <HiOutlineBriefcase className="text-teal-600 text-sm" />
+          <span>/experience</span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 tracking-tight">
-          Work <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">Experience</span>
+          Professional{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">
+            Experience
+          </span>
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          My practical internships, freelance endeavors, and collaborative project experience demonstrating hands-on readiness.
+          My professional career timeline spanning ICT consultancy and volunteer work at UNESCO Dhaka, while actively building modern full-stack web applications.
         </p>
       </div>
 
@@ -101,24 +103,26 @@ const Experience = () => {
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl border border-gray-200/90 p-6 sm:p-8 shadow-xs hover:shadow-lg hover:border-blue-300 transition-all duration-300 relative"
+            className="bg-white rounded-2xl border border-gray-200/90 p-6 sm:p-8 shadow-xs hover:shadow-lg hover:border-teal-300 transition-all duration-300 relative"
           >
             <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
               <div>
-                <span className={`inline-block text-xs font-semibold px-2.5 py-0.5 rounded-full border mb-2 ${exp.badgeColor}`}>
+                <span
+                  className={`inline-block text-xs font-semibold font-mono px-2.5 py-0.5 rounded-full border mb-2 ${exp.badgeColor}`}
+                >
                   {exp.type}
                 </span>
                 <h3 className="text-xl font-bold text-gray-900">
                   {exp.role}
                 </h3>
-                <p className="text-sm font-semibold text-blue-600 mt-0.5">
+                <p className="text-sm font-semibold text-teal-700 mt-0.5">
                   {exp.company}
                 </p>
               </div>
 
               <div className="flex flex-col sm:items-end text-xs text-gray-500 gap-1 shrink-0">
-                <span className="flex items-center gap-1 font-medium text-gray-700">
-                  <HiOutlineCalendar className="text-blue-600" />
+                <span className="flex items-center gap-1 font-medium text-gray-700 font-mono">
+                  <HiOutlineCalendar className="text-teal-600" />
                   {exp.period}
                 </span>
                 <span className="flex items-center gap-1">
@@ -129,10 +133,10 @@ const Experience = () => {
             </div>
 
             {/* Responsibilities list */}
-            <ul className="space-y-2 mb-5">
+            <ul className="space-y-2.5 mb-5">
               {exp.responsibilities.map((task, idx) => (
                 <li key={idx} className="flex items-start gap-2.5 text-sm text-gray-700">
-                  <HiOutlineCheckCircle className="text-blue-600 text-base shrink-0 mt-0.5" />
+                  <HiOutlineCheckCircle className="text-teal-600 text-base shrink-0 mt-0.5" />
                   <span className="leading-relaxed">{task}</span>
                 </li>
               ))}
@@ -140,8 +144,8 @@ const Experience = () => {
 
             {/* Technologies used */}
             <div className="pt-4 border-t border-gray-100 flex flex-wrap items-center gap-2">
-              <span className="text-xs font-bold uppercase text-gray-400 mr-1">
-                Tech:
+              <span className="text-xs font-bold uppercase font-mono text-gray-400 mr-1">
+                Competencies:
               </span>
               {exp.technologies.map((tech) => (
                 <span
@@ -156,23 +160,29 @@ const Experience = () => {
         ))}
       </div>
 
-      {/* Why Hire Me as a Fresher Callout Card */}
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-blue-200/80 p-8 shadow-sm">
+      {/* Why Hire Me Callout Card */}
+      <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-teal-200/80 p-6 sm:p-8 shadow-sm">
         <div className="text-center max-w-xl mx-auto mb-8 space-y-1">
+          <div className="inline-flex items-center gap-1 text-teal-700 text-xs font-bold uppercase tracking-wider font-mono">
+            <HiOutlineSparkles /> Value Proposition
+          </div>
           <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-            Why Hire Me as a Fresher Developer?
+            Why Hire Me as a Full Stack Developer?
           </h3>
           <p className="text-sm text-gray-500">
             What I bring to your engineering team from day one.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {valueProps.map((item) => {
             const Icon = item.icon;
             return (
-              <div key={item.title} className="flex items-start gap-3.5 p-4 rounded-xl bg-blue-50/40 border border-blue-100/60">
-                <div className="w-10 h-10 rounded-lg bg-blue-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <div
+                key={item.title}
+                className="flex items-start gap-3.5 p-4 rounded-xl bg-teal-50/30 border border-teal-100/60"
+              >
+                <div className="w-10 h-10 rounded-lg bg-teal-600 text-white flex items-center justify-center shrink-0 shadow-xs">
                   <Icon className="text-lg" />
                 </div>
                 <div>

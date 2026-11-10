@@ -1,88 +1,91 @@
 import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
-import project3 from "../assets/projects/project3.svg";
 
 const projects = [
   {
     id: 1,
-    title: "Developer Portfolio & Showcase",
+    name: "StudioSpace",
+    title: "StudioSpace - Creative Workspace & Studio Booking Marketplace",
+    subtitle: "Hourly Studio Booking Marketplace",
     image: project1,
-    category: "Frontend Web Application",
+    category: "Full Stack Web Application",
+    short:
+      "A booking platform where creators reserve photo studios, sound stages, podcast lounges, and music suites by the hour, and hosts list and manage their own creative spaces.",
+    points: [
+      "Hourly booking system with real-time double-booking prevention",
+      "Firebase user authentication with verified server-side JWT requests (JWKS/jose)",
+      "Dedicated host portal with full space listing and booking management (CRUD)",
+      "Interactive category filters, search indexing, and customer ratings & reviews"
+    ],
     technologies: [
       "React",
-      "Tailwind CSS",
-      "JavaScript (ES6+)",
+      "Vite",
       "React Router",
-      "Vite"
+      "Tailwind CSS",
+      "Swiper",
+      "Firebase Auth",
+      "Node.js",
+      "Express.js",
+      "MongoDB Atlas",
+      "Vercel"
     ],
     description:
-      "A modern, high-performance personal portfolio built for showcasing frontend engineering skills, interactive projects, and a responsive resume viewer. Features smooth section navigation, responsive mobile menu, dynamic routing, and ATS-friendly printable resume.",
-    live: "https://example.com/portfolio-demo",
-    github: "https://github.com/example/portfolio-frontend",
+      "StudioSpace is a full-stack marketplace designed for the creative community. Creators can discover and reserve professional photography studios, sound stages, podcast lounges, and recording suites by the hour. Hosts can list their spaces, set hourly rates, manage incoming reservation schedules, and review customer feedback. The frontend is built with React, Vite, and Tailwind CSS, authenticated with Firebase Authentication, and powered by an Express.js and MongoDB Atlas REST API deployed seamlessly on Vercel.",
+    live: "https://studiospace-client-mu.vercel.app",
+    github: "https://github.com/kazolroy/studiospace-client",
     challenges: [
-      "Building a smooth active-section scroll spy with route-aware navigation",
-      "Crafting an ATS-compatible, print-optimized resume stylesheet in React",
-      "Ensuring fluid responsiveness across ultra-wide monitors down to small mobile viewports"
+      "Double Booking Prevention: When multiple users attempted to book the same studio simultaneously, race conditions occurred. Solved by implementing an overlap validation check on the Express server that returns an HTTP 409 conflict, coupled with real-time UI disabling of booked hourly slots on the client.",
+      "Token Verification Without Service Account: Securing protected API routes required authenticating Firebase ID tokens on the backend without storing long-lived service account secrets. Implemented token validation using the jose library verified against Google's public JSON Web Key Sets (JWKS), enforcing strict ownership checks on update and delete operations.",
+      "Session Hydration & Reload Glitches: Private routes initially caused unwanted redirects on page refresh before Firebase restored auth persistence. Fixed by adding an explicit loading state inside the PrivateRoute wrapper that waits for auth hydration to resolve.",
+      "Vercel Serverless Deployment & CORS: Hosting an Express API as a Vercel serverless function required a tailored vercel.json rewrite rule and dynamic CORS origin validation to safely accept client requests from multiple environments."
     ],
     future: [
-      "Dark / Light theme mode toggle with localStorage persistence",
-      "Interactive contact form integration via EmailJS / Web3Forms",
-      "Markdown-powered tech blog section with syntax highlighting"
-    ],
+      "Integrate online payment gateways (Stripe and bKash) for instant automated checkout and invoice generation.",
+      "Add a user wishlist and downloadable PDF receipt generator for completed studio bookings.",
+      "Implement a sleek Dark / Light theme mode toggle with user preference persistence in localStorage.",
+      "Build an interactive visual calendar timeline for hosts with real-time booking push notifications."
+    ]
   },
   {
     id: 2,
-    title: "TechGear - Modern Tech Store",
+    name: "BazarDor",
+    title: "BazarDor (বাজার দর) - Daily Market Price Tracker",
+    subtitle: "Daily Essential Commodity Price Tracker",
     image: project2,
-    category: "E-Commerce Web App",
+    category: "Full Stack Web Application",
+    short:
+      "A real-time market tracker showing daily prices of rice, lentils, oil, vegetables, fish, meat, eggs, milk, and spices across Bangladesh, complete with price fluctuation trends.",
+    points: [
+      "Real-time price trend indicators with automated percentage calculation",
+      "Top 6 daily price increases and decreases highlighted in dedicated sections",
+      "Multi-category filtering combined with low-to-high and high-to-low price sorting",
+      "Protected product detail views with user session management via BetterAuth"
+    ],
     technologies: [
-      "React",
+      "Next.js (App Router)",
       "Tailwind CSS",
-      "JavaScript",
-      "Context API",
-      "REST API"
+      "DaisyUI",
+      "BetterAuth",
+      "MongoDB",
+      "react-hot-toast"
     ],
     description:
-      "A responsive, full-featured electronics and tech gadgets web application. Includes instant product category filtering, price range slider, real-time shopping cart drawer with quantity adjustments, and simulated checkout flow.",
-    live: "https://example.com/techgear-demo",
-    github: "https://github.com/example/techgear-ecommerce",
+      "BazarDor (বাজার দর) is a modern web application dedicated to transparency in everyday grocery shopping. It tracks and presents daily market rates for essential household commodities across Bangladesh. Each item indicates whether its price has risen or fallen along with calculated percentage shifts. The application highlights the top six price increases and decreases each day, offers multi-criteria category filtering, and protects detailed product insights for authenticated users. Built using the Next.js App Router, Tailwind CSS, DaisyUI, BetterAuth, and MongoDB.",
+    live: "https://b14-a7-bazar-dor-792d.vercel.app/",
+    github: "https://github.com/kazolroy/B14-A7-Bazar-Dor",
     challenges: [
-      "Global cart state management with React Context without unnecessary re-renders",
-      "Smooth slide-over modal drawer implementation for cart and mobile filters",
-      "Instant multi-criteria client-side search and category filtering"
+      "Authentication & Route Protection: Restricting comprehensive product pricing history to logged-in users required implementing protected routes with BetterAuth on the Next.js App Router, handling session redirects cleanly without hydration mismatches.",
+      "Price Trend Algorithm: Dynamically calculating whether a product price has risen or dropped with accurate percentage delta, and dynamically ranking the top 6 daily price hikes and reductions via server queries.",
+      "Continuous Smooth Price Ticker: Developing a zero-lag, continuous horizontal ticker running directly below the navigation bar displaying live price alerts without causing layout shifts.",
+      "Synchronized Filtering & Sorting: Ensuring category selection and ascending/descending price sorting functioned smoothly together without unnecessary re-fetching."
     ],
     future: [
-      "Integration with Stripe payment gateway test API",
-      "User authentication and order history dashboard",
-      "Wishlist system with localStorage persistence"
-    ],
-  },
-  {
-    id: 3,
-    title: "TaskFlow - Agile Kanban Board",
-    image: project3,
-    category: "Productivity & SaaS",
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "JavaScript (ES6+)",
-      "LocalStorage"
-    ],
-    description:
-      "An intuitive task management and productivity dashboard inspired by Trello and Jira. Supports custom task creation, priority color-coding, multi-stage workflow columns (Backlog, In Progress, Completed), and search indexing.",
-    live: "https://example.com/taskflow-demo",
-    github: "https://github.com/example/taskflow-kanban",
-    challenges: [
-      "Seamless task state transitions across columns with proper data immutability",
-      "Persistent state synchronization with browser LocalStorage",
-      "Clean UI component design adhering to accessibility standards"
-    ],
-    future: [
-      "Drag and drop reordering using @dnd-kit/core",
-      "Firebase Firestore integration for multi-device real-time sync",
-      "Subtasks checklist and due-date notification system"
-    ],
-  },
+      "Add interactive historical price chart visualizations using Chart.js to observe monthly trends.",
+      "Introduce a user favorites watchlist with automated price drop email and browser notifications.",
+      "Incorporate district-wise regional market price breakdowns across all 64 districts in Bangladesh.",
+      "Add a native bilingual toggle supporting both Bangla (বাংলা) and English interfaces."
+    ]
+  }
 ];
 
 export default projects;
