@@ -239,20 +239,6 @@ const Navbar = () => {
             )}
           </div>
 
-          {/* Quick Copy Link Pill */}
-          <button
-            type="button"
-            onClick={handleCopyResumeLink}
-            className="p-2.5 text-gray-600 hover:text-teal-600 bg-gray-100 hover:bg-gray-200 rounded-xl transition cursor-pointer"
-            title="Copy direct resume link"
-            aria-label="Copy direct resume link"
-          >
-            {copied ? (
-              <HiOutlineCheck className="text-base text-emerald-600" />
-            ) : (
-              <HiOutlineClipboardCopy className="text-base" />
-            )}
-          </button>
         </div>
 
         {/* Mobile Topbar Buttons */}

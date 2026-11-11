@@ -3,9 +3,7 @@ import {
   HiOutlineCalendar,
   HiOutlineLocationMarker,
   HiOutlineCheckCircle,
-  HiOutlineSparkles,
 } from "react-icons/hi";
-import { FaLaptopCode, FaHandsHelping, FaAward, FaNetworkWired } from "react-icons/fa";
 
 const experiences = [
   {
@@ -50,29 +48,6 @@ const experiences = [
       "Audio-Visual Setup",
       "ICT Support",
     ],
-  },
-];
-
-const valueProps = [
-  {
-    icon: FaLaptopCode,
-    title: "Full Stack Web Mastery",
-    desc: "Hands-on expertise across React 19, Next.js App Router, Tailwind CSS, Node.js, Express, and MongoDB, actively shipping production features.",
-  },
-  {
-    icon: FaNetworkWired,
-    title: "Proven UNESCO ICT Experience",
-    desc: "Demonstrated reliability as both Volunteer and Consultant at UNESCO Dhaka, troubleshooting IT infrastructure under international standards.",
-  },
-  {
-    icon: FaHandsHelping,
-    title: "Empathetic & Clear Communicator",
-    desc: "Easygoing, patient, and respectful collaborator who communicates effectively with developers, non-technical team members, and stakeholders.",
-  },
-  {
-    icon: FaAward,
-    title: "Rapid Adaptability & Drive",
-    desc: "Eager to absorb constructive code reviews, follow industry best practices, and contribute immediate engineering value from day one.",
   },
 ];
 
@@ -160,40 +135,6 @@ const Experience = () => {
         ))}
       </div>
 
-      {/* Why Hire Me Callout Card */}
-      <div className="max-w-4xl mx-auto bg-white rounded-2xl border border-teal-200/80 p-6 sm:p-8 shadow-sm">
-        <div className="text-center max-w-xl mx-auto mb-8 space-y-1">
-          <div className="inline-flex items-center gap-1 text-teal-700 text-xs font-bold uppercase tracking-wider font-mono">
-            <HiOutlineSparkles /> Value Proposition
-          </div>
-          <h3 className="text-xl sm:text-2xl font-bold text-gray-900">
-            Why Hire Me as a Full Stack Developer?
-          </h3>
-          <p className="text-sm text-gray-500">
-            What I bring to your engineering team from day one.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {valueProps.map((item) => {
-            const Icon = item.icon;
-            return (
-              <div
-                key={item.title}
-                className="flex items-start gap-3.5 p-4 rounded-xl bg-teal-50/30 border border-teal-100/60"
-              >
-                <div className="w-10 h-10 rounded-lg bg-teal-600 text-white flex items-center justify-center shrink-0 shadow-xs">
-                  <Icon className="text-lg" />
-                </div>
-                <div>
-                  <h4 className="text-sm font-bold text-gray-900 mb-1">{item.title}</h4>
-                  <p className="text-xs text-gray-600 leading-relaxed">{item.desc}</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
     </section>
   );
 };

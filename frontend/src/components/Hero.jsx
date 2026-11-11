@@ -276,16 +276,6 @@ const Hero = () => {
               </a>
             </div>
           </div>
-
-          {/* Sticky Note Badge */}
-          <div className="mt-4 sm:mt-0 sm:absolute sm:-bottom-5 sm:-right-4 bg-amber-300 text-amber-950 p-4 rounded-xl shadow-xl transform rotate-2 max-w-xs border border-amber-400">
-            <p className="text-xs font-bold italic leading-snug">
-              "Make it work, make it clear, then make it fast."
-            </p>
-            <span className="block text-[10px] font-mono font-bold tracking-wider text-amber-800 mt-2 uppercase">
-              // Note to self
-            </span>
-          </div>
         </div>
       </div>
     </section>
