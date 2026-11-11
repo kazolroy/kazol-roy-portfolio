@@ -134,7 +134,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.linkedin.com/in/kazol-roy-a33113325/"
+                href="https://www.linkedin.com/in/kazolchandraroy/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn Profile"

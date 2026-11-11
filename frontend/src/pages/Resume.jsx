@@ -171,7 +171,7 @@ const Resume = () => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/kazol-roy-a33113325/"
+              href="https://www.linkedin.com/in/kazolchandraroy/"
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-1.5 hover:text-blue-700 transition"
