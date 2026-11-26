@@ -151,7 +151,7 @@ const ProjectDetails = () => {
           {/* Brief & Full Description (Task Req 9) */}
           <div className="space-y-3">
             <h2 className="text-xl font-bold text-gray-900">Project Overview</h2>
-            <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
+            <p className="text-gray-700 leading-relaxed text-sm sm:text-base text-justify hyphens-auto">
               {project.description}
             </p>
             {project.points && (
@@ -174,7 +174,7 @@ const ProjectDetails = () => {
                 {project.challenges.map((challenge, idx) => (
                   <li key={idx} className="flex items-start gap-2.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-teal-600 mt-2 shrink-0"></span>
-                    <span className="leading-relaxed">{challenge}</span>
+                    <span className="leading-relaxed text-justify hyphens-auto">{challenge}</span>
                   </li>
                 ))}
               </ul>

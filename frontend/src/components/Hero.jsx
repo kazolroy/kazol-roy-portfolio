@@ -66,7 +66,7 @@ const Hero = () => {
           </div>
 
           {/* Introduction Paragraph */}
-          <p className="text-base sm:text-lg text-gray-600 max-w-2xl leading-relaxed">
+          <p className="text-base sm:text-lg text-gray-600 max-w-2xl leading-relaxed text-justify hyphens-auto">
             I build modern, performant web applications with{" "}
             <span className="text-gray-900 font-semibold">React.js</span>,{" "}
             <span className="text-gray-900 font-semibold">Next.js</span>,{" "}

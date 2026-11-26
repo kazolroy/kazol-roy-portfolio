@@ -156,7 +156,7 @@ const AboutMe = () => {
         {/* Right Column: Bio Narrative & Journey (7 cols) */}
         <div className="lg:col-span-7 space-y-6">
           {/* Quote Block */}
-          <blockquote className="border-l-4 border-teal-500 pl-4 py-1 text-gray-800 text-base sm:text-lg italic font-medium leading-relaxed bg-teal-50/40 rounded-r-xl pr-3">
+          <blockquote className="border-l-4 border-teal-500 pl-4 py-1 text-gray-800 text-base sm:text-lg italic font-medium leading-relaxed bg-teal-50/40 rounded-r-xl pr-3 text-justify hyphens-auto">
             "Computer Science graduate who enjoys turning ideas into{" "}
             <span className="text-teal-700 font-bold not-italic">
               fast, reliable web apps
@@ -165,7 +165,7 @@ const AboutMe = () => {
           </blockquote>
 
           {/* Detailed Journey Narrative */}
-          <div className="space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base">
+          <div className="space-y-4 text-gray-700 leading-relaxed text-sm sm:text-base text-justify hyphens-auto">
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight">
               My Programming Journey
             </h3>

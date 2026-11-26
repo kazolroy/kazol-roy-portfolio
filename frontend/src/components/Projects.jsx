@@ -59,7 +59,7 @@ const Projects = () => {
                   </p>
                 </div>
 
-                <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed">
+                <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed text-justify hyphens-auto">
                   {project.short}
                 </p>
 
