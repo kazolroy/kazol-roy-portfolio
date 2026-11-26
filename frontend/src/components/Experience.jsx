@@ -14,10 +14,9 @@ const experiences = [
     type: "Consultancy • ICT Operations",
     badgeColor: "bg-blue-50 text-blue-800 border-blue-200",
     responsibilities: [
-      "Managed day-to-day ICT support operations across all teams at UNESCO Dhaka, diagnosing and resolving complex hardware, software, printing, and local network issues.",
-      "Configured operating systems, workstation installations, preventive hardware maintenance, and overall organizational ICT infrastructure.",
-      "Supervised digital collaboration tools, staff email systems, audio-visual conference equipment, and coordinated live technical operations for high-level meetings and national/international workshops.",
-      "Provided prompt technical guidance with clear, patient communication to ensure uninterrupted office workflows.",
+      "Managed day-to-day ICT support operations across all teams at UNESCO Dhaka, diagnosing and resolving hardware, software, printing, and network issues.",
+      "Configured operating systems, workstation setups, preventive hardware maintenance, and core organizational ICT infrastructure.",
+      "Supervised digital collaboration tools, staff email systems, and audio-visual operations for high-level meetings and workshops.",
     ],
     technologies: [
       "ICT Operations",
@@ -36,10 +35,9 @@ const experiences = [
     type: "Volunteer • Practical Training",
     badgeColor: "bg-emerald-50 text-emerald-800 border-emerald-200",
     responsibilities: [
-      "Delivered technical assistance to staff members, diagnosing computer hardware, operating system setups, software updates, and local network connectivity problems.",
-      "Assisted the IT department with assembling, setting up, and deploying workstations, laptops, and peripheral hardware.",
-      "Arranged conference room multimedia tools, projectors, audio systems, and digital presentations for organizational training sessions and workshops.",
-      "Maintained IT support logs and collaborated closely with senior consultants to optimize workstation speed and stability.",
+      "Delivered hands-on technical assistance to staff, troubleshooting hardware, OS setups, software updates, and local network connectivity.",
+      "Assisted the IT team with assembling, configuring, and deploying workstations, laptops, and peripheral devices.",
+      "Prepared conference room multimedia equipment, projectors, and audio systems for training sessions and workshops.",
     ],
     technologies: [
       "Technical Troubleshooting",

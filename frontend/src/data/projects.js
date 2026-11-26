@@ -60,13 +60,13 @@ const projects = [
       "Real-time price trend indicators with automated percentage calculation",
       "Top 6 daily price increases and decreases highlighted in dedicated sections",
       "Multi-category filtering combined with low-to-high and high-to-low price sorting",
-      "Protected product detail views with user session management via BetterAuth"
+      "Protected product detail views with user session management via Better Auth"
     ],
     technologies: [
       "Next.js (App Router)",
       "Tailwind CSS",
       "DaisyUI",
-      "BetterAuth",
+      "Better Auth",
       "MongoDB",
       "react-hot-toast"
     ],

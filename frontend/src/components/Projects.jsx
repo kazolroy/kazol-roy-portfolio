@@ -21,7 +21,7 @@ const Projects = () => {
         </h2>
 
         <p className="text-base sm:text-lg text-gray-600">
-          Showcasing real-world full-stack web applications I engineered to solve practical problems, demonstrating component architecture, secure API integration, and clean responsive design.
+          Selected full-stack applications built with React, Next.js, Express, and MongoDB—focused on clean architecture, secure APIs, and responsive design.
         </p>
       </div>
 

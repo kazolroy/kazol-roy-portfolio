@@ -61,20 +61,20 @@ const Hero = () => {
               Developer
             </h1>
             <p className="text-lg sm:text-xl font-medium text-teal-700">
-              Fresh skills. Real projects. Ready to ship.
+              React · Next.js · Node.js · MongoDB · Ready to ship.
             </p>
           </div>
 
           {/* Introduction Paragraph */}
           <p className="text-base sm:text-lg text-gray-600 max-w-2xl leading-relaxed text-justify hyphens-auto">
-            I build modern, performant web applications with{" "}
+            CSE graduate and Junior Full Stack Developer building scalable web applications with{" "}
+            <span className="text-gray-900 font-semibold">TypeScript</span>,{" "}
             <span className="text-gray-900 font-semibold">React.js</span>,{" "}
             <span className="text-gray-900 font-semibold">Next.js</span>,{" "}
             <span className="text-gray-900 font-semibold">Node.js</span>, and{" "}
-            <span className="text-gray-900 font-semibold">MongoDB</span>. Computer Science graduate
-            from Bangladesh University with professional experience as both a Volunteer and Consultant in
-            ICT Support at UNESCO Dhaka. Passionate about engineering clean, scalable full-stack applications,
-            ready to contribute immediate value and ship real features.
+            <span className="text-gray-900 font-semibold">MongoDB</span>. Experienced in shipping
+            end-to-end products with role-based dashboards, secure authentication, and Stripe
+            payments—ready to contribute to a product team from day one.
           </p>
 
           {/* Single-Click Resume Download & Usable Link Actions */}

@@ -170,27 +170,21 @@ const AboutMe = () => {
               My Programming Journey
             </h3>
             <p>
-              I started learning programming during my undergraduate studies at <strong>Bangladesh University</strong>, graduating with a <strong>B.Sc. in Computer Science and Engineering (CGPA 3.67 / 4.00)</strong>. University coursework introduced me to foundational computer science through <strong>C, C++, Java, and Python</strong>, which sparked my passion for logic, data structures, and algorithmic problem-solving.
-            </p>
-            <p>
-              Once I saw the creative thrill of building software that solves real user pain points, I immersed myself in modern web technologies. I dove deep into the JavaScript ecosystem, focusing on <strong>React.js</strong>, <strong>Next.js (App Router)</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong>.
+              I began programming during my B.Sc. in Computer Science and Engineering at <strong>Bangladesh University</strong> (CGPA 3.67 / 4.00), building strong foundations in logic, data structures, and problem-solving through <strong>C, C++, Java, and Python</strong>.
             </p>
 
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight pt-2">
               The Type of Work I Enjoy
             </h3>
             <p>
-              I truly enjoy building full-stack applications where a clean, responsive frontend talks smoothly to a well-designed RESTful API. I care deeply about readable and maintainable code, snappy page load times, accessible user interfaces, and layouts that look pixel-perfect across all mobile, tablet, and desktop screens.
-            </p>
-            <p>
-              Beyond software engineering, I served as a <strong>Volunteer – ICT Support (Nov 2024 – May 2025)</strong> and subsequently as a <strong>Consultant – ICT Support (May 2025 – Sep 2025) at UNESCO Dhaka</strong>. There, I supported office-wide ICT infrastructure, resolved hardware and network issues, and managed audio-visual operations for international meetings and workshops. Currently, I am actively building production-grade web applications and seeking full-time opportunities as a <strong>Junior Full Stack Developer</strong>.
+              I specialize in full-stack applications where clean, responsive interfaces connect seamlessly to well-structured REST APIs using <strong>TypeScript</strong>, <strong>React.js</strong>, <strong>Next.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong>—with a strong focus on security, performance, and maintainable architecture.
             </p>
 
             <h3 className="text-xl sm:text-2xl font-bold text-gray-900 tracking-tight pt-2">
-              My Personality &amp; What Drives Me
+              Beyond Code
             </h3>
             <p>
-              I am a simple, friendly, and easygoing person who genuinely enjoys collaborating and connecting with people from diverse backgrounds. When I am away from my computer, you will find me playing <strong>cricket</strong> or <strong>football</strong>, or travelling and exploring new places across the country. I bring positive energy, dedication, and a relentless desire to learn to every team I join.
+              Alongside software engineering, my ICT Support experience at <strong>UNESCO Dhaka</strong> sharpened my troubleshooting, collaboration, and communication skills. Outside of work, I enjoy playing <strong>cricket</strong> and <strong>football</strong>, and travelling to new places.
             </p>
           </div>
 
@@ -205,7 +199,7 @@ const AboutMe = () => {
                   <HiOutlineSparkles className="text-teal-600 shrink-0" />
                   {item.title}
                 </h4>
-                <p className="text-xs text-gray-500 mt-1 leading-relaxed">{item.desc}</p>
+                <p className="text-xs text-gray-500 mt-1 leading-relaxed text-justify hyphens-auto">{item.desc}</p>
               </div>
             ))}
           </div>
