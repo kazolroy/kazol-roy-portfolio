@@ -18,6 +18,9 @@ import {
   SiVercel,
   SiNextdotjs,
   SiExpress,
+  SiTypescript,
+  SiStripe,
+  SiJsonwebtokens,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { HiOutlineCode, HiOutlineServer, HiOutlineTerminal, HiOutlineDatabase } from "react-icons/hi";
@@ -103,6 +106,16 @@ const skillsData = [
     ratingText: "Comfortable (3/5)",
     description: "Responsive grid systems, Modals, Navbar components, Utilities",
   },
+  {
+    name: "TypeScript",
+    category: "frontend",
+    icon: SiTypescript,
+    color: "text-blue-600",
+    bg: "bg-blue-50 border-blue-100",
+    level: 3,
+    ratingText: "Comfortable (3/5)",
+    description: "Static typing, Interfaces, Props safety, Next.js App Router types",
+  },
 
   // Backend
   {
@@ -134,6 +147,26 @@ const skillsData = [
     level: 4,
     ratingText: "Proficient (4/5)",
     description: "CRUD design, Status codes, JSON payloads, CORS, JWKS token verification",
+  },
+  {
+    name: "JWT & Better Auth",
+    category: "backend",
+    icon: SiJsonwebtokens,
+    color: "text-pink-600",
+    bg: "bg-pink-50 border-pink-100",
+    level: 4,
+    ratingText: "Proficient (4/5)",
+    description: "Session management, Role hooks, HS256 JWT bridging, Route guards",
+  },
+  {
+    name: "Stripe Payments",
+    category: "backend",
+    icon: SiStripe,
+    color: "text-indigo-600",
+    bg: "bg-indigo-50 border-indigo-100",
+    level: 3,
+    ratingText: "Comfortable (3/5)",
+    description: "Checkout Sessions, Webhook verification, Idempotent payment records",
   },
 
   // Database

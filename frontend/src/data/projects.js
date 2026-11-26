@@ -1,5 +1,6 @@
 import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
+import project3 from "../assets/projects/project3.png";
 
 const projects = [
   {
@@ -84,6 +85,50 @@ const projects = [
       "Introduce a user favorites watchlist with automated price drop email and browser notifications.",
       "Incorporate district-wise regional market price breakdowns across all 64 districts in Bangladesh.",
       "Add a native bilingual toggle supporting both Bangla (বাংলা) and English interfaces."
+    ]
+  },
+  {
+    id: 3,
+    name: "FixMate",
+    title: "FixMate - Home Appliance Repair Service Platform",
+    subtitle: "Home Appliance Repair Platform",
+    image: project3,
+    category: "Full Stack Web Application",
+    short:
+      "A full stack repair service marketplace where customers book verified technicians for smartphones, laptops, ACs and more, and pay with Stripe only after the job is completed.",
+    points: [
+      "Three role-based dashboards (Customer, Technician, Admin) with server-side route guards",
+      "Pay-after-service flow with Stripe Checkout and idempotent webhook verification",
+      "Job status pipeline from Requested to Completed with a visual step tracker",
+      "Better Auth session bridged to Express REST APIs via short-lived HS256 JWTs"
+    ],
+    technologies: [
+      "Next.js 15",
+      "TypeScript",
+      "Tailwind CSS",
+      "Better Auth",
+      "JWT",
+      "Express.js",
+      "MongoDB Atlas",
+      "Stripe",
+      "Vercel"
+    ],
+    description:
+      "FixMate is a full-stack home appliance and device repair platform connecting customers with verified technicians. Customers browse approved repair services across categories like smartphones, laptops, ACs, refrigerators, TVs, and washing machines, submit repair requests, and track every step of the job. Payment via Stripe Checkout occurs only after job completion. Technicians manage listings, toggle availability, and update job statuses with a final amount modal, while admins moderate listings, manage user roles, and monitor platform revenue.",
+    live: "https://fixmate-client-chi.vercel.app",
+    github: "https://github.com/kazolroy/fixmate-client",
+    githubServer: "https://github.com/kazolroy/fixmate-server",
+    challenges: [
+      "Authentication Bridge: Better Auth manages sessions on the Next.js side while the Express backend needs verified user identity. Built a Next.js API route that signs a short-lived HS256 JWT from the active Better Auth session, verified by Express middleware.",
+      "Strict Role Enforcement: Prevented privilege escalation by adding Better Auth databaseHooks (before-create and before-update) so users can never sign up as admin or modify their own role.",
+      "Pay-After-Service & Idempotency: Integrated Stripe Checkout and webhooks with an idempotent MongoDB upsert so duplicate webhook deliveries never create duplicate payment records.",
+      "Session Race Condition: Fixed a 500 Server Component error immediately after sign-up by redirecting newly registered users cleanly to the sign-in flow."
+    ],
+    future: [
+      "Add real-time notifications with Socket.io when booking statuses change.",
+      "Add a verified customer review and rating system for technicians.",
+      "Enable Google OAuth social login alongside email/password.",
+      "Add downloadable PDF invoices after completed payments."
     ]
   }
 ];

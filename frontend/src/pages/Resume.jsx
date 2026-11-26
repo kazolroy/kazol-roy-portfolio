@@ -211,7 +211,7 @@ const Resume = () => {
                 Languages:
               </span>
               <p className="text-gray-700 leading-relaxed text-xs sm:text-sm">
-                JavaScript (ES6+), HTML5, CSS3, C, C++, Java, Python
+                JavaScript (ES6+), TypeScript, HTML5, CSS3, C, C++, Java, Python
               </p>
             </div>
 
@@ -229,7 +229,7 @@ const Resume = () => {
                 Databases &amp; Authentication:
               </span>
               <p className="text-gray-700 leading-relaxed text-xs sm:text-sm">
-                MongoDB, MongoDB Atlas, Firebase Authentication, BetterAuth, REST APIs, JWKS/jose
+                MongoDB, MongoDB Atlas, Better Auth, Firebase Authentication, JWT, Stripe, REST APIs
               </p>
             </div>
 
@@ -315,7 +315,43 @@ const Resume = () => {
           </h2>
 
           <div className="space-y-4">
-            {/* Project 1: StudioSpace */}
+            {/* Project 1: FixMate */}
+            <div className="border-l-2 border-teal-600 pl-4 py-0.5">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">
+                  FixMate – Home Appliance Repair Platform
+                </h3>
+                <div className="flex items-center gap-3 text-xs font-semibold text-teal-700">
+                  <a href="https://fixmate-client-chi.vercel.app" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                    Live Demo <HiExternalLink />
+                  </a>
+                  <span>•</span>
+                  <a href="https://github.com/kazolroy/fixmate-client" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                    Client <HiExternalLink />
+                  </a>
+                  <span>•</span>
+                  <a href="https://github.com/kazolroy/fixmate-server" target="_blank" rel="noreferrer" className="hover:underline flex items-center gap-1">
+                    Server <HiExternalLink />
+                  </a>
+                </div>
+              </div>
+              <p className="text-xs text-gray-500 font-mono mt-0.5">
+                Tech Stack: Next.js 15, TypeScript, Tailwind CSS, Better Auth, JWT, Express.js, MongoDB Atlas, Stripe, Vercel
+              </p>
+              <ul className="mt-2 list-disc list-inside text-xs sm:text-sm text-gray-700 space-y-1">
+                <li>
+                  Built three role-based dashboards (Customer, Technician, Admin) with server-side route guards and Better Auth role hooks.
+                </li>
+                <li>
+                  Implemented pay-after-service using Stripe Checkout and webhook verification with idempotent database upserts.
+                </li>
+                <li>
+                  Bridged Next.js Better Auth sessions to Express APIs via short-lived HS256 JWTs and built a step-by-step job status pipeline.
+                </li>
+              </ul>
+            </div>
+
+            {/* Project 2: StudioSpace */}
             <div className="border-l-2 border-teal-600 pl-4 py-0.5">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
                 <h3 className="text-base font-bold text-gray-900 flex items-center gap-2">

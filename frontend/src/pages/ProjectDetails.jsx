@@ -117,6 +117,18 @@ const ProjectDetails = () => {
                 <span>Client Repository (GitHub)</span>
               </a>
             )}
+
+            {project.githubServer && (
+              <a
+                href={project.githubServer}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 bg-gray-800 hover:bg-gray-950 text-white px-6 py-3 rounded-xl font-semibold shadow-sm hover:shadow transition text-sm"
+              >
+                <FaGithub className="text-lg" />
+                <span>Server Repository (GitHub)</span>
+              </a>
+            )}
           </div>
 
           {/* Main Technology Stack (Task Req 9) */}
